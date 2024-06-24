@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Outfits", sans-serif;
+}
+
+input[type='checkbox']{
+    display: none;
+}
+
+header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 1em 5em;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.other {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+ul li a {
+    color: grey;
+    font: 600;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.other .button a button {
+    background-color: #c0e500;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+}
+
+/* HERO SECTION  */
+
+
+.hero-section {
+    margin: 7em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.text-2 {
+    font-size: 1.1rem;
+    padding-bottom: 2em;
+    color: grey;
+    font-weight: 600;
+}
+
+.Hire {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 1em;
+}
+
+.Hire_button {
+    background-color: #c0e500;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+
+.explore_us {
+    background-color: gainsboro;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 600;
+}
+
+
+h1 {
+    font-family: poppins, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.flex-image {
+    display: flex;
+    gap: 1em; 
+}
+.flex-image img {
+    width: 100%;
+}
+
+.explore{
+    margin-top: 10em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+h1 {
+    margin: 1em;
+    font-family: poppins, sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.explore_oval{
+    padding: 0.6em 0.8em 0.6em 0.8em;
+    border: solid 1px black;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.padding-container{
+    padding: 1em 5em;
+}
+
+.heading h1{
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin: 0.4em 0;
+}
+.heading button{
+    border-radius: 25px;
+    padding: 0.5em;
+    color: gray;
+    background-color: transparent;
+    border: 1px black;
+}
+.view {
+    text-align: center;
+    width: fit-content;
+    margin: 3em auto 0;
+}
+.view a button {
+    background-color: #c0e500;
+    padding: 1em 3em 1em 3em;
+    border-radius: 10px;
+}
+/* SERVICES SECTION */
+
+.services_oval{
+    .form-container {
+      
+    }
+}
+
+.web-design{
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 1fr;
+}
+
+.branding{
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 1fr;
+}
+
+.motion-design{
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr 1fr;
+}
+
+nav {
+    background-color: gainsboro;
+    position: fixed;
+    z-index: -1;
+    top: 4em;
+    right: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0 0 2em;
+    transition: all 0.5s ease-in-out;
+}
+nav-ul {
+    display: flex;
+    flex-direction: column;
+}
+.bars{
+    display: block;
+}
+.header #show-bars:checked-nav {
+    height: 100%;
+    background-color: gainsboro;
+}
+
+@media only screen and (max-width:414px) {
+    .hero-section {
+        margin-top: 6em;
+    }
+
+    .text-1 h1 {
+        font-size: 2rem;
+    }
+    .text-2 p{
+        font-size: 0.6rem;
+    }
+
+    .works .hire a button {
+        padding: 1em 2em;
+    }
+
+
+    .flex-images {
+        flex-direction: column;
+    }
+
+    .header {
+        margin: 1em;
+    }
+    .logo img{
+        width: 90px;
+    }
+
+    .padding-container{
+        padding: 1em;
+    }
+    .heading h1{
+        font-size: 2rem;
+    } 
+
+    .text h1{
+        font-size: 1.5rem;
+    }
+    .text p{
+        font-size: 0.7rem;
+    }
+    .explore {
+        margin-top: 1em;
+    }
+    
+}   
+
